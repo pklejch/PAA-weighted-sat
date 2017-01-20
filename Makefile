@@ -8,4 +8,4 @@ weighted-sat:
 	$(CC) -o weighted-sat.out $(SOURCES)
 
 clean:
-	rm wighted-sat.out
+	rm weighted-sat.out
