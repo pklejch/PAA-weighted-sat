@@ -27,3 +27,10 @@
 *.exe
 *.out
 *.app
+
+
+env/
+nbproject/
+ga/
+galib247/
+time.txt

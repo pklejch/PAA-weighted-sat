@@ -5,7 +5,7 @@ SOURCES=$(wildcard *.cpp)
 all: weighted-sat
 
 weighted-sat:
-	$(CC) -o weighted-sat.out $(SOURCES)
+	$(CC) -o weighted-sat.out $(SOURCES) -lga
 
 clean:
 	rm weighted-sat.out
