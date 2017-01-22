@@ -352,7 +352,7 @@ void CFormula::solve(int popSize, int generations, float probOfCrossover, float 
     g_formula = this;
     
     GARandomSeed();
-    GA1DBinaryStringGenome genome(m_numberOfVariables, fitnessWrapper4);
+    GA1DBinaryStringGenome genome(m_numberOfVariables, fitnessWrapper2);
     
     GASimpleGA ga(genome);
     
@@ -363,8 +363,8 @@ void CFormula::solve(int popSize, int generations, float probOfCrossover, float 
     ga.nBestGenomes(popSize);
     
     //ga.crossover(GA1DBinaryStringGenome::OnePointCrossover);
-    //ga.crossover(GA1DBinaryStringGenome::TwoPointCrossover);
-    ga.crossover(GA1DBinaryStringGenome::UniformCrossover);
+    ga.crossover(GA1DBinaryStringGenome::TwoPointCrossover);
+    //ga.crossover(GA1DBinaryStringGenome::UniformCrossover);
     
     // zmena z ruletove selekce na turnajovou
     //ga.selector(GATournamentSelector());

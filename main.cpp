@@ -23,7 +23,7 @@ int main(int argc, char ** argv){
     std::ofstream time("time.txt");
     
     clock_t begin = clock();
-    formula.solve(200,10000,0.9,0.05);
+    formula.solve(500,1000,0.9,0.05);
     
     //formula.solveBF();
     clock_t end = clock();
